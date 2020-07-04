@@ -4,7 +4,7 @@
   "keywords": [],
   "buildpacks": [
     {
-      "url": "jdk/adopt"
+      "url": "https://github.com/benbdevd/graal-buildpack"
     },
     {
       "url": "heroku/java"
