@@ -1,13 +1,9 @@
 {
-  "name": "Teamup Telegram Bot",
-  "description": "Telegram Bot for task assignment on teamup calendar",
-  "keywords": [],
+  "name": "Quarkus Telegram Bot",
+  "description": "Quarkus test",
   "buildpacks": [
     {
-      "url": "https://github.com/benbdevd/graal-buildpack"
-    },
-    {
-      "url": "heroku/java"
+      "url": "https://github.com/weibeld/heroku-buildpack-run"
     }
   ],
   "env": {
@@ -16,9 +12,6 @@
     },
     "CAMEL_COMPONENT_TELEGRAM_AUTHORIZATION_TOKEN": {
       "description": "telegram token you got from Botfather"
-    },
-    "BOT_NAME": {
-      "description": "username of your telegram bot. Without '@'"
     }
   }
 }
