@@ -9,6 +9,9 @@
   "env": {
     "TELEGRAM_TOKEN": {
       "description": "telegram token you got from Botfather"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "enter the heroku App name here again"
     }
   }
 }
