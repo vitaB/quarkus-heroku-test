@@ -146,7 +146,6 @@
                 <property>
                     <name>native</name>
                 </property>
-                <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
                 <quarkus.package.type>native</quarkus.package.type>
