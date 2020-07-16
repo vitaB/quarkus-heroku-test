@@ -1,1 +1,1 @@
-curl -sS -L https://github.com/vitaB/quarkus-heroku-test/releases/download/0.1.0.3/camel-quarkus-telegram-bot-1.0-SNAPSHOT-runner > camel-quarkus-telegram-bot-1.0-SNAPSHOT-runner && chmod +x camel-quarkus-telegram-bot-1.0-SNAPSHOT-runner
+curl -sS -L https://github.com/vitaB/quarkus-heroku-test/releases/download/0.1.0.4/camel-quarkus-telegram-bot-1.0-SNAPSHOT-runner > camel-quarkus-telegram-bot-1.0-SNAPSHOT-runner && chmod +x camel-quarkus-telegram-bot-1.0-SNAPSHOT-runner
