@@ -1,5 +1,7 @@
 package com.webhook.bot
 
+import com.github.kittinunf.fuel.core.responseUnit
+import com.github.kittinunf.fuel.httpGet
 import org.apache.camel.quarkus.kotlin.routes
 import org.eclipse.microprofile.config.inject.ConfigProperty
 import javax.enterprise.context.ApplicationScoped
@@ -18,7 +20,11 @@ class TelegramRoute() {
 
     @Produces
     fun myRoutes() = routes {
-        from("webhook:telegram:bots?webhookExternalUrl=$webhookUrl&authorizationToken=$telegramToken")
+        "https://api.telegram.org/bot$telegramToken/setWebhook?url=$webhookUrl"
+                .httpGet()
+                .responseUnit()
+
+        from("webhook:telegram:bots?authorizationToken=$telegramToken&webhookExternalUrl=$webhookUrl&webhookAutoRegister=false")
                 .log("\${body}")
     }
 }
