@@ -12,9 +12,13 @@ class TelegramRoute() {
     @ConfigProperty(name = "webhook.external.url")
     lateinit var webhookUrl: String
 
+
+    @ConfigProperty(name = "telegram.token")
+    lateinit var telegramToken: String
+
     @Produces
     fun myRoutes() = routes {
-        from("webhook:telegram:bots?webhookExternalUrl=$webhookUrl")
+        from("webhook:telegram:bots?webhookExternalUrl=$webhookUrl&authorizationToken=$telegramToken")
                 .log("\${body}")
     }
 }
