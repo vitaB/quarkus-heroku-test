@@ -6,8 +6,8 @@ import io.quarkus.runtime.Startup
 import org.eclipse.microprofile.config.inject.ConfigProperty
 import javax.enterprise.context.ApplicationScoped
 
-//@Startup
-//@ApplicationScoped
+@Startup
+@ApplicationScoped
 class RegisterWebhookOnStartUp(@ConfigProperty(name = "webhook.external.url")
                                webhookUrl: String,
                                @ConfigProperty(name = "telegram.token")

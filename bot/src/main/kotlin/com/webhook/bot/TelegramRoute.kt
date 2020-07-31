@@ -6,7 +6,7 @@ import javax.enterprise.context.ApplicationScoped
 
 
 @ApplicationScoped
-class TelegramRoute(@ConfigProperty(name = "quarkus.http.port")
+class TelegramRoute(@ConfigProperty(name = "port")
                     val port: Int): RouteBuilder() {
 
     @ConfigProperty(name = "telegram.token")
